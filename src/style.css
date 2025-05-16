@@ -76,9 +76,14 @@ html,body{
 
 .section-2{
     position: relative;
+    font-size: 5vh;
+    color: white;
     width: 100vw;
     height: 100vh;
     background-color: #1f2032;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .profile {

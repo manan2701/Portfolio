@@ -162,7 +162,7 @@ const App = () => {
                         <div className="right-nav">
                             <div className="pages">
                                 <a href="#" className='page active'>Home</a>
-                                <a href="#" className='page'>About Me</a>
+                                <a href="#sec2" className='page'>About Me</a>
                                 <a href="#" className='page'>Skills</a>
                                 <a href="#" className='page'>Projects</a>
                             </div>
@@ -193,8 +193,8 @@ const App = () => {
                     </div>
                 </div>
 
-                <div className="section-2">
-                    mananannanananananna
+                <div className="section-2" id='sec2'>
+                    <h1>Under Development</h1>
                 </div>
             </div>
         }
