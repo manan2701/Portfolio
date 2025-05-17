@@ -3,10 +3,6 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 
 const App = () => {
-    window.onload = function () {
-        // Start animation logic here
-        document.body.classList.add('start-animation');
-    };
     let [showContent , setShowContent] = useState(false)
 
     useGSAP(() => {
