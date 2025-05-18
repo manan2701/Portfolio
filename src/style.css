@@ -101,15 +101,21 @@ html,body{
 
 .sidebar {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     top: 0;
     right: -100%;
     height: 100vh;
     width: 100vw;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
     background-color: rgba(0, 0, 0, 0.95);
     color: white;
     transition: right 0.3s ease-in-out;
     z-index: 1000;
-    padding: 2rem;
 }
 
 .sidebar-close {
@@ -124,7 +130,19 @@ html,body{
     right: 0;
 }
 
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+}
 
+.sidebar a:hover{
+    color: #faad1d;
+}
+ 
+.sidebar {
+    text-decoration: none;
+}
 
 .left-nav {
     color: #faad1d;
@@ -223,6 +241,10 @@ html,body{
         justify-content: center;
     }
     
+    .lines{
+        display: none;
+    }
+
     .profile {
         position: relative;
         width: 65vh;

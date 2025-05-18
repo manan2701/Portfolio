@@ -164,13 +164,12 @@ const App = () => {
 
 
                         <div className={`sidebar ${menuopen ? "active" : ""}`}>
-                        <div className="sidebar-close" onClick={() => setmenuopen(false)}>✕</div>
-                            <h2>Menu</h2>
-                            <a href="#" className='page active'>Home</a>
-                            <a href="#sec2" className='page'>About Me</a>
-                            <a href="#" className='page'>Skills</a>
-                            <a href="#" className='page'>Projects</a>
-                        </div>
+                            <div className="sidebar-close" onClick={() => setmenuopen(false)}>✕</div>
+                                <a href="#" className='page active'>Home</a>
+                                <a href="#sec2" className='page'>About Me</a>
+                                <a href="#" className='page'>Skills</a>
+                                <a href="#" className='page'>Projects</a>
+                            </div>
                         <div className="right-nav">
                             <div className="pages">
                                 <a href="#" className='page active'>Home</a>
