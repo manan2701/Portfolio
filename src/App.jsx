@@ -4,6 +4,7 @@ import gsap from 'gsap'
 
 const App = () => {
     let [showContent , setShowContent] = useState(false)
+    const [menuopen, setmenuopen] = useState(false)
 
     useGSAP(() => {
 
@@ -154,6 +155,21 @@ const App = () => {
                     <div className="navbar">
                         <div className="left-nav">
                             <span>Manan.</span>
+                        </div>
+                        <div className="lines" onClick={()=>{setmenuopen(!menuopen)}}>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+
+
+                        <div className={`sidebar ${menuopen ? "active" : ""}`}>
+                        <div className="sidebar-close" onClick={() => setmenuopen(false)}>✕</div>
+                            <h2>Menu</h2>
+                            <a href="#" className='page active'>Home</a>
+                            <a href="#sec2" className='page'>About Me</a>
+                            <a href="#" className='page'>Skills</a>
+                            <a href="#" className='page'>Projects</a>
                         </div>
                         <div className="right-nav">
                             <div className="pages">
