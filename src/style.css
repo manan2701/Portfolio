@@ -162,8 +162,8 @@ html,body{
   
 .profile {
     position: relative;
-    width: 50vh;
-    height: 50vh;
+    width: 45vh;
+    height: 45vh;
     display: flex;
     border-radius: 50%;
 }
@@ -181,8 +181,8 @@ html,body{
     height: 100vh;
     width: 100vw;
     position: absolute;
-    font-size: 4vh;
-    line-height: 8vh;
+    font-size: 7vw;
+    line-height: 14vw;
     padding-left: 2px;
     z-index: 7;
     display: flex;
