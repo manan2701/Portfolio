@@ -343,6 +343,7 @@ body {
   .left-nav span {
     display: inline-block;
     position: relative;
+    font-size: 1.75rem;
   }
 
   .left-nav span::after {
