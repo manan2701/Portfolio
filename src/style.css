@@ -238,13 +238,137 @@ body {
   }
 
   .profile {
-    width: 65vh;
-    height: 65vh;
+    width: 60vh;
+    height: 60vh;
   }
 
   .details {
-    font-size: 3vw;
-    line-height: 6vw;
+    font-size: 4vw;
+    line-height: 8vw;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .navbar {
+    top: -10%;
+    height: 10vh;
+    padding: 0 5rem;
+  }
+
+  .right-nav {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .right-nav .pages,
+  .pages {
+    display: flex;
+    gap: 1rem;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .page {
+    color: white;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 900;
+    position: relative;
+    padding: 0.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .page::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #faad1d;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  .page:hover::before,
+  .page.active::before {
+    transform: scaleX(1);
+  }
+
+  .page:hover,
+  .page.active {
+    color: #faad1d !important;
+  }
+
+  .button {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background: transparent;
+    color: white;
+    border: 2px solid #faad1d;
+    border-radius: 25px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: color 0.3s ease;
+  }
+
+  .button::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    background: #faad1d;
+    transition: width 0.4s ease;
+    z-index: 0;
+  }
+
+  .button:hover::before {
+    width: 100%;
+  }
+
+  .button span {
+    position: relative;
+    z-index: 1;
+  }
+
+  .button:hover {
+    color: black;
+  }
+
+  .left-nav span {
+    display: inline-block;
+    position: relative;
+  }
+
+  .left-nav span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: #faad1d;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease;
+  }
+
+  .left-nav:hover span::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+
+@media (min-width: 1024px) {
+  .details {
+    font-size: 6vh;
+    line-height: 12vh;
     flex-direction: row;
     gap: 1rem;
   }
