@@ -369,59 +369,19 @@ body {
   .details {
     font-size: 6vh;
     line-height: 12vh;
-    flex-direction: row;
-    gap: 1rem;
-  }
-
-  .navbar {
-    top: -10%;
-    height: 10vh;
-    padding: 0 5rem;
   }
 
   .right-nav {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+    gap: 2rem;
   }
 
   .right-nav .pages,
   .pages {
-    display: flex;
-    gap: 1rem;
-    font-family: "Poppins", sans-serif;
+    gap: 1.5rem;
   }
 
   .page {
-    color: white;
-    text-decoration: none;
-    font-size: 0.8rem;
-    font-weight: 900;
-    position: relative;
-    padding: 0.5rem;
-    transition: color 0.3s ease;
-  }
-
-  .page::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    background-color: #faad1d;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-  }
-
-  .page:hover::before,
-  .page.active::before {
-    transform: scaleX(1);
-  }
-
-  .page:hover,
-  .page.active {
-    color: #faad1d !important;
+    font-size: 1rem;
   }
 
   .button {
