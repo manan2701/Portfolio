@@ -257,22 +257,21 @@ body {
 
   .right-nav {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
     align-items: center;
-    justify-content: space-between;
   }
 
   .right-nav .pages,
   .pages {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     font-family: "Poppins", sans-serif;
   }
 
   .page {
     color: white;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 900;
     position: relative;
     padding: 0.5rem;
