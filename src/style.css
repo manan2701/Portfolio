@@ -232,8 +232,7 @@ body {
   justify-content: center;
 }
 
-/* ------------ Media Query (Desktop) ------------ */
-@media (min-width: 768px) {
+@media (min-width: 876px) {
   .lines {
     display: none;
   }
