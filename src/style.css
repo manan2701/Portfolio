@@ -385,65 +385,11 @@ body {
   }
 
   .button {
-    display: inline-block;
-    position: relative;
-    padding: 0.5rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    background: transparent;
-    color: white;
-    border: 2px solid #faad1d;
-    border-radius: 25px;
-    cursor: pointer;
-    overflow: hidden;
-    transition: color 0.3s ease;
-  }
-
-  .button::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 0;
-    top: 0;
-    left: 0;
-    background: #faad1d;
-    transition: width 0.4s ease;
-    z-index: 0;
-  }
-
-  .button:hover::before {
-    width: 100%;
-  }
-
-  .button span {
-    position: relative;
-    z-index: 1;
-  }
-
-  .button:hover {
-    color: black;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
   }
 
   .left-nav span {
-    display: inline-block;
-    position: relative;
-  }
-
-  .left-nav span::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -4px;
-    height: 2px;
-    width: 100%;
-    background: #faad1d;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease;
-  }
-
-  .left-nav:hover span::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    font-size: 2rem;
   }
 }
